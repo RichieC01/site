@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+    <title>BIO</title>
+    <link href="/Users/owner/Applications/bootstrap-3.3.7/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <link rel = "stylesheet" type = "text/css" href = "stylesheet.css"/>
+</head>
+<body>    
+    
+    <div class="navbar navbar-collapse collapse navbar-right" >
+        <div class="container-fluid">
+            <button data-toggle="collapse" type="button" class="navbar-toggle collapsed" data-target="#bs-nav">
+            </button>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="#cover">Home</a></li><br>
+                <li><a href="#about">About</a></li><br>
+                <li><a href="#contact">Contact</a></li><br>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Writings <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#wrt1">Writing 1</a></li>
+<!--                    <li role="separator" class="divider"></li>-->
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Projects <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#tetris">Tetris</a></li>
+                        <li><a href="#vrsite">VR Site</a></li>
+<!--                    <li role="separator" class="divider"></li>-->
+                        <li><a href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="page" id="cover">
+        <div class="cover">
+            <h2>Richie</h2>
+        </div>
+    </div>
+    
+    <div class="page" id="about">
+        <div class="content">
+            <h1>About</h1>
+            <hr>
+            
+            <div class="inner-content">
+                <img id="me" src="me.jpg">
+                <p id="bio">Hi my name is Lorem Ipsum dolor sit amet, wisi curabitur sed. Urna lorem nec quos pede eleifend vitae, et dictumst mauris quam aliquam adipiscing vitae, quis pede tellus mi habitasse a mauris, dapibus viverra libero mattis eu torquent. Porta labore nulla sed euismod non, ac integer sed. Nulla eget quisque curabitur proin amet donec, euismod aptent, elit luctus ut in lorem turpis, risus ad erat semper, sociosqu nec egestas. Quis odio convallis hendrerit volutpat risus, blandit urna ullamcorper pede est, lacus tincidunt aliquam lorem. Nullam ornare eget vel accumsan bibendum tempor, est quis arcu eu non, ac nulla risus sed, quam ultricies orci fusce. Nec sodales fermentum neque pellentesque auctor nec. Euismod amet rutrum, pede tincidunt mollis justo sit a, ac rerum luctus, lorem scelerisque eu imperdiet aliquet volutpat. Nonummy nec adipisicing tortor auctor wisi justo.<br><br>Dolor vitae montes orci rutrum condimentum, orci commodo orci ac fusce per per, diam tempus, scelerisque lobortis morbi. Aliquet et ac libero tristique, volutpat donec blandit, vitae vitae lacus ac magna erat, donec curabitur mauris scelerisque vel. Pellentesque ultricies, lacinia scelerisque vitae donec vel, et quis. Est ac magna nonummy, dui mauris ut ornare, sed natoque neque amet purus diam, est nonummy integer egestas ullamcorper est vel, vel at adipiscing nunc. Pellentesque urna donec dapibus molestie. Aenean ligula euismod volutpat laoreet turpis.<br><br>Sed dui sed suspendisse, ac in suspendisse magni, metus natoque pretium suspendisse tempus, tincidunt ut ut tempor purus quis, nam wisi suspendisse vel. Libero consectetuer ac, quam condimentum pellentesque aliquam mauris, ornare neque elit, sed vehicula voluptatem quam molestie, scelerisque lorem eu nisl illo nonummy a. Morbi urna neque sit sed at, diam lectus molestie, nec nibh libero nibh est vulputate ornare. Morbi orci tempor leo molestie nibh nec, tortor aenean leo amet, ullamcorper egestas arcu est sit, potenti viverra hymenaeos. Morbi elit sit a, ante molestie a quam, est pede per erat pede, at pellentesque curae cursus pellentesque, ipsum lorem phasellus luctus integer. Diam sollicitudin vehicula neque in, semper etiam fusce risus sem ut hendrerit, neque sed sed ac magna, repellendus euismod.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page" id="contact">
+        <div class="content">
+            <h1>Contact</h1>
+            <hr>
+            
+            <div class="inner-content">
+                <form id="contact-form" method="post" action="contact.php" role="form">
+                    <div class="messages"></div>
+                    <div class="controls">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_phone">Phone</label>
+                                    <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message *</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Message for me *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted"><strong>*</strong> These fields are required. Contact form template by <a href="http://bootstrapious.com" target="_blank">Bootstrapious</a>.</p>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    
+    <div class="page" id="writings">
+        <div class="content">
+            <h1>Projects</h1>
+            <hr>
+            
+            <div class="inner-content">
+                <h3 id="wrt1">Writing 1</h3>
+            </div>
+        </div>
+    </div>
+    
+    <div class="page" id="projects">
+        <div class="content">
+            <h1>Projects</h1>
+            <hr>
+            
+            <div class="inner-content">
+                <h3 id="tetris">Tetris</h3>
+                <h3 id="vrsite">VR Site</h3>
+            </div>
+        </div>
+    </div>
+    
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
